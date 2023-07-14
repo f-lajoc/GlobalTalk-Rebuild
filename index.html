@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+    <!--linking font -->
+      <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap" rel="stylesheet">
+      
+  <!--linking icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" /><!-- Latest font awesome (6.4.0) -->
+<!-- tailwind configuration-->
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { redHat: ['"Red Hat Display" ', 'cursive'] }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="m-4 md:m-6 font-redHat">
+    
+   <!-- navigation menu -->
+    <header>
+        <nav class="font-medium text-sm flex flex-column items-center justify-between p-2">
+            <div class="text-xl ">
+                <h1>GlobalTalk</h1>
+            </div>
+            
+            <div class="sm:block hidden  text-gray-400 sm:w-2/4">
+                 <ul class="flex pl-3 gap-2">
+                     <li class="text-gray-200">|</li>
+                     <li>Main</li>
+                     <li>Guide</li>
+                     <li>Statistics</li>
+                     <li>Games <i class="fa fa-arrow-down fa-2xs"></i></li>
+                 </ul>
+               
+            </div>
+           
+            <div class="flex gap-2 items-center justify-end sm:w-2/4">
+                <p class="hover:text-[#407689]">Login<i class="fa fa-arrow-right fa-2xs pl-0.5"></i> </fa></p>
+                
+                <a href="#"><button class="text-white bg-[#407689] px-2 py-0.5 rounded">SignUp</button></a>
+            </div>
+        </nav>
+    </header>
+  
+  
+  <!-- hero section -->
+    <section class="sm:flex flex-row-reverse shadow-md p-2 border-red-800">
+        
+        <div><!--hero image div -->
+            <img class="sm:w-full" src="images/hero-img.jpg" alt="illustration image for the hero section">
+        </div>
+        
+        <div class="sm:max-w-md"><!-- text container div-->
+        <div>
+             <h1 class="text-[#407689] uppercase my-2 lg:text-2xl">e-course platform</h1>
+             
+        <h2 class="text-4xl sm:max-w-sm md:text-5xl lg:text-6xl font-semibold mb-3">Learning and Teaching online, made easy.</h2>
+        
+        <p class="text-gray-500 mb-5 md:text-2xl lg:text-3xl">Gain subject certification or earn money while teaching online with GlobalTalk.</p>
+        </div>
+       
+       <!-- container div -->
+       <div class="flex items-center gap-2 text-sm md:text-2xl">
+           <p class="hover:text-[#407689] font-medium">Sign In<i class="fa fa-arrow-right fa-2xs pl-1"></i></p>
+           
+           <button class="bg-[#b0d7eb] text-[#407689] rounded-md p-1">Learn more<i class="fa fa-arrow-right fa-2xs pl-1"></i></button>
+       </div> 
+        
+        <!-- container div-->
+        <div class="mt-6 flex gap-2 tracking-tight md:tracking-normal gap-6 font-bold md:text-4xl lg:text-8xl">
+           
+           <!-- content -->
+             <div>
+                 
+            <h3 class="leading-none text-3xl"><fa><i class="fa fa-bolt text-[#407689] pr-1"></i></fa>700+</h3>
+            
+            <p class="text-gray-500 text-xs font-medium leading-none text-center">Hours of content</p>
+        </div>
+        
+        <!-- line break -->
+        <div class="border-l-2 border-gray-200">
+        </div>
+        
+        <!-- users -->
+        <div>
+            
+            <h3 class="leading-none text-3xl"><fa><i class="fa fa-bolt text-[#407689] pr-1"></i></fa>575k+</h3>
+            
+            <p class="text-gray-500 text-xs leading-none font-medium text-center">Active users</p>
+        </div>
+        </div>
+        </div>
+       
+      </section>
+    <!-- end of content -->
+    
+    <footer>        
+        <p class="text-center text-gray-500 mt-2">Made by <a class="text-[#407689]" href="https://github.com/f-lajoc">lajoc_devs</a></p>
+    </footer>
+</body>
+</html>
